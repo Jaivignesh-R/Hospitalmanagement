@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Patient Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body bgcolor="#E0FFFF">
+    <div class="container">
+        <div class="header">
+            <h1>Patient Registration</h1>
+            <a href="HospitalManagement.html" class="btn-back">←    Back to Portal</a>
+        </div>
+        
+        <form id="patientForm" class="medical-form">
+            <div class="form-section">
+                <h3>Personal Information</h3>
+                <div class="form-group">
+                    <label for="fullName">Full Name *</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="dateOfBirth">Date of Birth *</label>
+                        <input type="date" id="dateOfBirth" name="dateOfBirth" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="gender">Gender</label>
+                        <select id="gender" name="gender">
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h3>Medical Information</h3>
+                <div class="form-group">
+                    <label for="bloodGroup">Blood Group</label>
+                    <select id="bloodGroup" name="bloodGroup">
+                        <option value="">Select</option>
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="allergies">Known Allergies</label>
+                    <textarea id="allergies" name="allergies" rows="3"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="emergencyContact">Emergency Contact</label>
+                    <input type="tel" id="emergencyContact" name="emergencyContact">
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h3>Security Setup</h3>
+                <div class="form-group">
+                    <label for="passkey">Enter Patient Passkey</label>
+                    <input type="text" id="passkey" name="passkey">
+                </div>
+            </div>
+
+            <button type="submit" class="btn-submit">Register Patient</button>
+        </form>
+    
+</body>
+</html>
